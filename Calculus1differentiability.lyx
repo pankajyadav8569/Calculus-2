@@ -1,0 +1,254 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Definition : Let f : R
+\begin_inset Formula $^{3}\rightarrow$
+\end_inset
+
+R and X = (x
+\begin_inset Formula $_{1},x_{2},x_{3})$
+\end_inset
+
+ .
+ We say that f is differentiable at X if there exist 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ = (
+\begin_inset Formula $\alpha_{1},\alpha_{2},\alpha_{3})$
+\end_inset
+
+ 
+\begin_inset Formula $\in$
+\end_inset
+
+ R
+\begin_inset Formula $^{3}$
+\end_inset
+
+ such that the error function
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varepsilon(H)=\frac{f(X+H)-f(x)-\alpha.H}{||H||}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+tends to 0 as H
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+0
+\end_layout
+
+\begin_layout Standard
+In the above definition 
+\begin_inset Formula $\alpha.H$
+\end_inset
+
+ is the scalar product.
+ Note that the derivative f'(X) = (
+\begin_inset Formula $\alpha_{1},\alpha_{2},\alpha_{3}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Theorem : Let f : R
+\begin_inset Formula $^{3}$
+\end_inset
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+R , X 
+\begin_inset Formula $\in$
+\end_inset
+
+ R
+\begin_inset Formula $^{3}$
+\end_inset
+
+.
+ if f is differentiable at X then f is continuous at X.
+\end_layout
+
+\begin_layout Standard
+Proof : Suppose f is differentiable at X .
+ Then there exist 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ = (
+\begin_inset Formula $\alpha_{1},\alpha_{2},\alpha_{3})$
+\end_inset
+
+ 
+\begin_inset Formula $\in$
+\end_inset
+
+ R
+\begin_inset Formula $^{3}$
+\end_inset
+
+ such that 
+\end_layout
+
+\begin_layout Standard
+| f(X+H) – f(X) – 
+\begin_inset Formula $\alpha.H$
+\end_inset
+
+ | = ||H|| 
+\begin_inset Formula $\in(H)$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon(H)$
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+0 as H 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 0.
+\end_layout
+
+\begin_layout Standard
+Hence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|f(X+H)-f(H)|\leq||H||(\sum_{i=1}^{3}|\alpha_{i}|)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++||H||\varepsilon(H)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+and 
+\begin_inset Formula $\varepsilon(H)\rightarrow0$
+\end_inset
+
+ as H 
+\begin_inset Formula $\rightarrow0$
+\end_inset
+
+.
+ Therefore f(X+H)
+\begin_inset Formula $\rightarrow f(X)$
+\end_inset
+
+ as H 
+\begin_inset Formula $\rightarrow0.$
+\end_inset
+
+ This proves that f is continuous at X.
+\end_layout
+
+\end_body
+\end_document
